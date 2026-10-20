@@ -10,9 +10,9 @@ def formatear_nombre(nombre: str, apellido1: str, apellido2: str) -> str:
     :return: Nombre completo con cada palabra capitalizada.
     """
 
-    nombre_formateado: str = " ".join(nombre.strip().title().split())
-    apellido1_formateado: str = " ".join(apellido1.strip().title().split())
-    apellido2_formateado: str = " ".join(apellido2.strip().title().split())
+    nombre_formateado: str = nombre.strip().title()
+    apellido1_formateado: str = apellido1.strip().title()
+    apellido2_formateado: str = apellido2.strip().title()
 
     nombre_completo: str = (
         f"{nombre_formateado} "
